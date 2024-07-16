@@ -1,10 +1,17 @@
 # Internship Tasks: Quiz Game and Temperature Converter
 
-# Company: CODETECH IT SOLUTION
-# ID: CT08DS3979
-# Domain: C++ PROGRAMMING
-# Duration: JUNE 29th, 2024 to JULY 29th, 2024
-# Mentor:  Neela Santhosh Kumar  
+# Company: 
+CODETECH IT SOLUTION
+# ID:
+CT08DS3979
+# Domain: 
+C++ PROGRAMMING
+# Duration:
+JUNE 29th, 2024 to JULY 29th, 2024
+# Mentor:  
+Neela Santhosh Kumar  
+
+
 # Overview
 During my internship at Codetech IT Solutions, I worked on two main tasks: a Quiz Game and a Temperature Converter. Below is a brief description of each task and how they were implemented in C++.
 
@@ -36,10 +43,3 @@ The Temperature Converter is a utility that converts temperatures between Celsiu
 - Used functions to encapsulate conversion formulas.
 - Ensured robust error handling for user input.
 
-
-
-
-
----
-
-Feel free to customize this README file further based on specific details of your implementation and any additional features or insights you'd like to include.
