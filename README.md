@@ -24,17 +24,5 @@ The Quiz Game is a console-based application that quizzes users with multiple-ch
 - Used object-oriented principles for organizing questions, options, and scoring.
 - Used standard input and output for user interaction.
 
-## Temperature Converter
-### Description
-The Temperature Converter is a utility that converts temperatures between Celsius, Fahrenheit, and Kelvin scales.
 
-### Features
-- Conversion between Celsius, Fahrenheit, and Kelvin scales.
-- Input validation to handle invalid temperature values.
-- Support for bi-directional conversion (e.g., Celsius to Fahrenheit and vice versa).
-
-### Implementation
-- Implemented in C++ to handle temperature conversion logic.
-- Used functions to encapsulate conversion formulas.
-- Ensured robust error handling for user input.
 
