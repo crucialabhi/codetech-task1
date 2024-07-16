@@ -1,4 +1,4 @@
-# Internship Tasks: Quiz Game and Temperature Converter
+# Internship Tasks: Quiz Game
 
 ### Company: CODETECH IT SOLUTION
 ### ID: CT08DS3979
