@@ -1,0 +1,61 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+struct Question {
+    string questionText;
+    string choices[4];
+    char correctAnswer;
+};
+
+void displayQuestion(const Question& q, int questionNumber) {
+    cout << "Question " << questionNumber << ": " << q.questionText << endl;
+    for (int i = 0; i < 4; ++i) {
+        cout << char('A' + i) << ": " << q.choices[i] << endl;
+    }
+}
+
+bool checkAnswer(const Question& q, char answer) {
+    return toupper(answer) == q.correctAnswer;
+}
+
+int main() {
+    vector<Question> quiz = {
+        {"What is the capital of France?", {"A) Berlin", "B) London", "C) Paris", "D) Madrid"}, 'C'},
+        {"What is 2 + 2?", {"A) 3", "B) 4", "C) 5", "D) 6"}, 'B'},
+        {"What is the color of the sky?", {"A) Green", "B) Blue", "C) Red", "D) Yellow"}, 'B'},
+        {"What is the largest planet in our solar system?", {"A) Earth", "B) Mars", "C) Jupiter", "D) Saturn"}, 'C'},
+        {"Who wrote 'To Kill a Mockingbird'?", {"A) Harper Lee", "B) J.K. Rowling", "C) Mark Twain", "D) Ernest Hemingway"}, 'A'},
+        {"What is the speed of light?", {"A) 300,000 km/s", "B) 150,000 km/s", "C) 75,000 km/s", "D) 450,000 km/s"}, 'A'},
+        {"What is the chemical symbol for gold?", {"A) Au", "B) Ag", "C) Pb", "D) Fe"}, 'A'},
+        {"Who painted the Mona Lisa?", {"A) Vincent Van Gogh", "B) Pablo Picasso", "C) Leonardo da Vinci", "D) Claude Monet"}, 'C'},
+        {"What is the smallest prime number?", {"A) 0", "B) 1", "C) 2", "D) 3"}, 'C'},
+        {"What is the tallest mountain in the world?", {"A) K2", "B) Kangchenjunga", "C) Lhotse", "D) Mount Everest"}, 'D'}
+    };
+
+    random_device rd;
+    mt19937 g(rd());
+    shuffle(quiz.begin(), quiz.end(), g);
+
+    int score = 0;
+    char userAnswer;
+
+    for (size_t i = 0; i < quiz.size(); ++i) {
+        displayQuestion(quiz[i], i + 1);
+        cout << "Your answer: ";
+        cin >> userAnswer;
+
+        if (checkAnswer(quiz[i], userAnswer)) {
+            cout << "Correct!" << endl;
+            score++;
+        } else {
+            cout << "Wrong! The correct answer was " << quiz[i].correctAnswer << "." << endl;
+        }
+
+        cout << endl;
+    }
+
+    cout << "You scored " << score << " out of " << quiz.size() << "!" << endl;
+
+    return 0;
+}
